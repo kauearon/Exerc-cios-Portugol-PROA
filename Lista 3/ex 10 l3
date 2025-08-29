@@ -1,0 +1,40 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro valores[10]
+		inteiro dentro = 0, fora = 0
+
+		
+		para (inteiro i = 0; i < 10; i++)
+		{
+			escreva("Digite o ", (i+1), "º valor: ")
+			leia(valores[i])
+
+			se (valores[i] >= 24 e valores[i] <= 42) {
+				dentro = dentro + 1
+			}
+			senao {
+				fora = fora + 1
+			}
+		}
+
+		
+		escreva("\nValores dentro do intervalo [24,42]: ")
+		para (inteiro i = 0; i < 10; i++) {
+			se (valores[i] >= 24 e valores[i] <= 42) {
+				escreva(valores[i], " ")
+			}
+		}
+
+		escreva("\nValores fora do intervalo: ")
+		para (inteiro i = 0; i < 10; i++) {
+			se (valores[i] < 24 ou valores[i] > 42) {
+				escreva(valores[i], " ")
+			}
+		}
+
+		escreva("\n\nQuantidade dentro do intervalo: ", dentro, "\n")
+		escreva("Quantidade fora do intervalo: ", fora, "\n")
+	}
+}
