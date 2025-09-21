@@ -15,7 +15,7 @@ programa
     escreva("Digite o terceiro número: ")
     leia(n3)
 
-    se(n1 > n2 e n1 > n3){
+    se(n1 > n2 e n2 > n3){
       escreva("a soma dos números maiores é:  ", n1 + n2)
       
     }
